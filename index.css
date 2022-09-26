@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:wght@700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    color: var(--font-color);
+}
+
+::root {
+    --spacing-1: 8px;
+    --spacing-2: 12px;
+    --spacing-3: 16px;
+    --spacing-4: 24px;
+    --border-radius: 12px;
+    --font-color: #323232;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0 var(--spacing-3);
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-3) 0;
+}
+
+h2 {
+    font-family: "Proza Libre", sans-serif;
+    margin: 0;
+    margin bottom: var(--spacing-2);
+}
+
+#logo {
+    margin: 0;
+}
+
+.navigation-items {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+}
+
+.navigation-item {
+    margin: var(--spacing-1);
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+section {
+    padding: var(--spacing-3) 0;
+}
+
+.about-me-container {
+    display: flex;
+}
+
+.about-me-text-container {
+    margin-right: var(--spacing-3);
+}
+
+.portrait {
+    width: 300px;
+    border-radius: var(--border-radius);
+    flex-shrink: 0;
+}
+
+details {
+    cursor: pointer;
+}
+
+summary {
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+}
+
+.project-title h3 {
+    display: inline;
+}
+
+.project-image {
+    width: 50%;
+}
+
+#skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#skills-container > * {
+    font-size: 2em;
+    width: 2em;
+    margin-top: var(--spacing-1);
+}
+
+/*.fa-html5:before {
+    content: "\f13b";
+}
+
+.fa-css3-alt:before {
+    content: "\f38b";
+}
+
+.fa-js:before {
+    content: "\f3b8";
+}
+
+.fa-react:before {
+    content: "\f41b";
+}
+
+.fa-aws:before {
+    content: "\f375";
+}
+
+.fa-sketch:before {
+    content: "\f7c6";
+}
+
+.fa-figma:before {
+    content: "\f799";
+}
+
+.fa-git:before {
+    content: "\f1d3";
+}
+
+.fa-chrome:before {
+    content: "\f268";
+}
+
+.fa-terminal:before {
+    content: "\f120";
+}
+
+.fa-universal-access:before {
+    content: "\f29a";
+}
+
+.fa-npm:before {
+    content: "\f3d4";
+}
+
+.fa-node:before {
+    content: "\f419";
+}
+
+.fa-github:before {
+    content: "\f09b";
+}*/
+
+footer {
+    margin-top: auto;
+    padding: var(--spacing-2) 0;
+    text-align:center;
+}
+
+.heart {
+    color:red;
+}
+
+.icon {
+    font-size: 2em;
+    color: var(--font-color);
+    margin: 0 var(--spacing-1);
+}
+
+@media only screen and (max-width: 600px) {
+    .about-me-container {
+        flex-direction: column;
+    }
+}
